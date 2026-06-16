@@ -1,0 +1,10 @@
+.quotes {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.quotes p {
+  margin-top: 15px;
+  font-size: 1.2rem;
+  color: #e2e8f0;
+}

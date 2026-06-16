@@ -1,0 +1,243 @@
+/* FLASHCARD GENERATOR */
+
+.flashcard-generator{
+  background:linear-gradient(
+    135deg,
+    #12131c,
+    #1b1e2d
+  );
+  padding:35px;
+  border-radius:24px;
+  margin-bottom:30px;
+  border:1px solid rgba(255,255,255,.08);
+  box-shadow:
+  0 10px 30px rgba(0,0,0,.25);
+}
+
+.flashcard-generator h1{
+  margin-bottom:10px;
+  font-size:32px;
+}
+
+.flashcard-generator p{
+  color:#94a3b8;
+}
+
+/* INPUT */
+
+.input-row{
+  display:flex;
+  gap:15px;
+  margin-top:25px;
+}
+
+.input-row input{
+  flex:1;
+  padding:16px;
+  border:none;
+  border-radius:14px;
+  background:#0f172a;
+  color:white;
+  font-size:15px;
+  outline:none;
+}
+
+.input-row input:focus{
+  box-shadow:
+  0 0 0 2px #6c63ff;
+}
+
+.input-row button{
+  background:#6c63ff;
+  color:white;
+  border:none;
+  padding:0 25px;
+  border-radius:14px;
+  cursor:pointer;
+  font-weight:600;
+  transition:.3s;
+}
+
+.input-row button:hover{
+  transform:translateY(-3px);
+  box-shadow:
+  0 10px 20px rgba(108,99,255,.4);
+}
+
+/* STATS */
+
+.flashcard-stats{
+  display:flex;
+  gap:15px;
+  margin-bottom:25px;
+  flex-wrap:wrap;
+}
+
+.stat-box{
+  background:#12131c;
+  padding:15px 25px;
+  border-radius:14px;
+  border:1px solid rgba(255,255,255,.08);
+  font-weight:600;
+  transition:.3s;
+}
+
+.stat-box:hover{
+  transform:translateY(-4px);
+}
+
+/* GRID */
+
+.flashcards-grid{
+  display:grid;
+  grid-template-columns:
+  repeat(auto-fill,minmax(320px,1fr));
+  gap:25px;
+}
+
+/* CARD */
+
+.flash-card{
+  height:260px;
+  perspective:1200px;
+  cursor:pointer;
+}
+
+.flash-card-inner{
+  position:relative;
+  width:100%;
+  height:100%;
+  transition:.8s;
+  transform-style:preserve-3d;
+}
+
+.flash-card.flipped .flash-card-inner{
+  transform:rotateY(180deg);
+}
+
+.flash-card-front,
+.flash-card-back{
+  position:absolute;
+  width:100%;
+  height:100%;
+  border-radius:22px;
+  backface-visibility:hidden;
+
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+
+  padding:25px;
+  text-align:center;
+
+  border:1px solid rgba(255,255,255,.08);
+}
+
+/* FRONT */
+
+.flash-card-front{
+  background:linear-gradient(
+    135deg,
+    #1e293b,
+    #334155
+  );
+
+  color:white;
+
+  box-shadow:
+  0 10px 25px rgba(0,0,0,.25);
+}
+
+.flash-card-front h3{
+  font-size:20px;
+  margin-bottom:15px;
+}
+
+.flash-card-front span{
+  color:#cbd5e1;
+  font-size:14px;
+}
+
+/* BACK */
+
+.flash-card-back{
+  background:linear-gradient(
+    135deg,
+    #6c63ff,
+    #8b5cf6
+  );
+  color:white;
+  transform:rotateY(180deg);
+  box-shadow:0 8px 25px rgba(108,99,255,.35);
+}
+
+.flash-card-back p{
+  line-height:1.7;
+  font-size:15px;
+}
+
+/* HOVER */
+
+.flash-card:hover{
+  transform:translateY(-6px);
+  transition:.3s;
+}
+
+/* SHUFFLE & DOWNLOAD BUTTONS */
+
+.flash-actions{
+  display:flex;
+  gap:15px;
+  margin-bottom:25px;
+}
+
+.flash-actions button{
+  background:#12131c;
+  color:white;
+  border:none;
+  padding:12px 20px;
+  border-radius:12px;
+  cursor:pointer;
+  transition:.3s;
+}
+
+.flash-actions button:hover{
+  background:#6c63ff;
+}
+
+/* LIGHT THEME */
+
+.light-theme .flashcard-generator{
+  background:white;
+}
+
+.light-theme .flashcard-generator p{
+  color:#4b5563;
+}
+
+.light-theme .input-row input{
+  background:#f3f4f6;
+  color:#111827;
+}
+
+.light-theme .stat-box{
+  background:white;
+  color:#111827;
+}
+
+.light-theme .flash-card-front{
+  background:linear-gradient(
+    135deg,
+    #ffffff,
+    #f3f4f6
+  );
+
+  color:#111827;
+}
+
+.light-theme .flash-card-front span{
+  color:#4b5563;
+}
+
+

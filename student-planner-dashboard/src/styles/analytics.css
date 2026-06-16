@@ -1,0 +1,64 @@
+.analytics-page{
+  padding:40px;
+  color:white;
+}
+
+.analytics-page h1{
+  text-align:center;
+  margin-bottom:40px;
+}
+
+.graph-grid{
+  display:grid;
+  grid-template-columns:
+  repeat(auto-fit,minmax(350px,1fr));
+  gap:25px;
+}
+
+.graph-card{
+
+  background:#12131c;
+
+  border:1px solid
+  rgba(255,255,255,.06);
+
+  border-radius:20px;
+
+  padding:25px;
+
+  text-align:center;
+}
+
+.graph-card h2{
+  margin-bottom:10px;
+}
+
+.graph-card p{
+  color:#94a3b8;
+  margin-bottom:20px;
+}
+
+.overall-card{
+
+  margin-top:40px;
+
+  background:#12131c;
+
+  border:1px solid
+  rgba(255,255,255,.06);
+
+  border-radius:20px;
+
+  padding:30px;
+}
+
+.overall-card h2{
+  text-align:center;
+}
+
+.overall-card p{
+  text-align:center;
+  color:#94a3b8;
+  margin-bottom:20px;
+}
+

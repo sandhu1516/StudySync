@@ -1,0 +1,85 @@
+.pdf-page{
+  padding:40px;
+  color:white;
+}
+
+.pdf-page h1{
+  text-align:center;
+  margin-bottom:30px;
+}
+
+.pdf-card{
+
+  max-width:900px;
+
+  margin:auto;
+
+  background:#12131c;
+
+  border-radius:20px;
+
+  padding:30px;
+
+  display:flex;
+
+  flex-direction:column;
+
+  gap:20px;
+
+  border:1px solid rgba(255,255,255,.08);
+}
+
+.pdf-card input{
+
+  padding:10px;
+}
+
+.pdf-card textarea{
+
+  height:180px;
+
+  resize:none;
+
+  padding:15px;
+
+  border:none;
+
+  border-radius:12px;
+}
+
+.pdf-card button{
+
+  padding:14px;
+
+  border:none;
+
+  border-radius:12px;
+
+  background:#6c63ff;
+
+  color:white;
+
+  font-size:16px;
+
+  cursor:pointer;
+}
+
+.answer-box{
+
+  max-width:900px;
+
+  margin:30px auto;
+
+  background:#1a1d2e;
+
+  border-radius:20px;
+
+  padding:25px;
+
+  border:1px solid rgba(255,255,255,.08);
+}
+
+.answer-box h2{
+
+  margin-bottom:15px;
+}

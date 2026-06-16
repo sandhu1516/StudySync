@@ -1,0 +1,52 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 25px;
+}
+
+/* 🔥 BIG TITLE */
+.title {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+/* RIGHT SIDE STACK */
+.header-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 6px;
+}
+
+/* THEME BUTTON */
+.theme-btn {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+/* DATE TEXT */
+.date-box {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.card{
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255,255,255,0.05);
+}
+
+.card:hover{
+  box-shadow:
+  0 0 20px rgba(59,130,246,0.3),
+  0 0 40px rgba(59,130,246,0.1);
+}
+
+body{
+  background:var(--bg-color);
+  color:var(--text-color);
+  transition:.3s;
+}
