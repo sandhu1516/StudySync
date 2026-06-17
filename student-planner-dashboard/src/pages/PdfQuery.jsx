@@ -41,7 +41,7 @@ function PdfQuery() {
 
       const res =
         await axios.post(
-  "http://localhost:5000/api/pdf/ask",
+  "http://studysync-q7ex.onrender.com/api/pdf/ask",
   formData
 );
 

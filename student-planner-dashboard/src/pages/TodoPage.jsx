@@ -23,7 +23,7 @@ function TodoPage() {
       const response =
         await axios.get(
 
-          "http://localhost:5000/api/tasks",
+          "http://studysync-q7ex.onrender.com/api/tasks",
 
           {
             headers: {
@@ -54,7 +54,7 @@ function TodoPage() {
 
       await axios.post(
 
-        "http://localhost:5000/api/tasks",
+        "http://studysync-q7ex.onrender.com/api/tasks",
 
         {
           title: task
@@ -92,7 +92,7 @@ function TodoPage() {
 
       await axios.put(
 
-        `http://localhost:5000/api/tasks/${id}`,
+        `http://studysync-q7ex.onrender.com/api/tasks/${id}`,
 
         {
           completed:
@@ -126,7 +126,7 @@ function TodoPage() {
 
       await axios.delete(
 
-        `http://localhost:5000/api/tasks/${id}`,
+        `http://studysync-q7ex.onrender.com/api/tasks/${id}`,
 
         {
           headers: {

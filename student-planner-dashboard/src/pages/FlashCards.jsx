@@ -18,7 +18,7 @@ const fetchCompletedTask = async () => {
 
     const response =
       await axios.get(
-        "http://localhost:5000/api/tasks",
+        "http://studysync-q7ex.onrender.com/api/tasks",
         {
           headers:{
             Authorization:
@@ -73,7 +73,7 @@ try {
 
   const response =
     await axios.post(
-      "http://localhost:5000/api/flashcards/generate",
+      "http://studysync-q7ex.onrender.com/api/flashcards/generate",
      {
   subject: subjectName
 }

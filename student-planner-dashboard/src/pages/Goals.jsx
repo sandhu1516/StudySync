@@ -35,7 +35,7 @@ function Goals() {
         const response =
           await axios.get(
 
-            "http://localhost:5000/api/goals",
+            "http://studysync-q7ex.onrender.com/api/goals",
 
             {
               headers: {
@@ -70,7 +70,7 @@ function Goals() {
 
         await axios.post(
 
-          "http://localhost:5000/api/goals",
+          "http://studysync-q7ex.onrender.com/api/goals",
 
           {
             title,
@@ -116,7 +116,7 @@ function Goals() {
 
         await axios.put(
 
-          `http://localhost:5000/api/goals/${id}`,
+          `http://studysync-q7ex.onrender.com/api/goals/${id}`,
 
           {
             progress:
@@ -154,7 +154,7 @@ function Goals() {
 
         await axios.delete(
 
-          `http://localhost:5000/api/goals/${id}`,
+          `http://studysync-q7ex.onrender.com/api/goals/${id}`,
 
           {
             headers: {
