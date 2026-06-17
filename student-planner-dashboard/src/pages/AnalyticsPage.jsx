@@ -51,7 +51,7 @@ const fetchAnalytics = async () => {
     const taskResponse =
       await axios.get(
 
-        "http://studysync-q7ex.onrender.com/api/tasks",
+        "https://studysync-q7ex.onrender.com/api/tasks",
 
         {
           headers:{
@@ -65,7 +65,7 @@ const fetchAnalytics = async () => {
     const timetableResponse =
       await axios.get(
 
-        "http://studysync-q7ex.onrender.com/api/timetable",
+        "https://studysync-q7ex.onrender.com/api/timetable",
 
         {
           headers:{
@@ -79,7 +79,7 @@ const fetchAnalytics = async () => {
     const goalsResponse =
       await axios.get(
 
-        "http://studysync-q7ex.onrender.com/api/goals",
+        "https://studysync-q7ex.onrender.com/api/goals",
 
         {
           headers:{

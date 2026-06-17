@@ -30,7 +30,7 @@ const fetchNotes = async () => {
     const response =
       await axios.get(
 
-        "http://studysync-q7ex.onrender.com/api/notes",
+        "https://studysync-q7ex.onrender.com/api/notes",
 
         {
           headers:{
@@ -75,7 +75,7 @@ const fetchNotes = async () => {
 
       await axios.put(
 
-        `http://studysync-q7ex.onrender.com/api/notes/${editId}`,
+        `https://studysync-q7ex.onrender.com/api/notes/${editId}`,
 
         {
           title,
@@ -106,7 +106,7 @@ const fetchNotes = async () => {
 
       await axios.post(
 
-        "http://studysync-q7ex.onrender.com/api/notes",
+        "https://studysync-q7ex.onrender.com/api/notes",
 
         {
           title,
@@ -153,7 +153,7 @@ const fetchNotes = async () => {
 
     await axios.delete(
 
-      `http://studysync-q7ex.onrender.com/api/notes/${id}`,
+      `https://studysync-q7ex.onrender.com/api/notes/${id}`,
 
       {
         headers:{

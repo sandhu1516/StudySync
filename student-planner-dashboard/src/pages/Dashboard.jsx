@@ -83,7 +83,7 @@ fetchStreak();
     const response =
       await axios.get(
 
-        "http://studysync-q7ex.onrender.com/api/badges",
+        "https://studysync-q7ex.onrender.com/api/badges",
 
         {
           headers:{
@@ -112,7 +112,7 @@ const fetchStreak = async () => {
 
     const response = await axios.get(
 
-      "http://studysync-q7ex.onrender.com/api/streak",
+      "https://studysync-q7ex.onrender.com/api/streak",
 
       {
         headers: {
@@ -139,7 +139,7 @@ const fetchStreak = async () => {
   const fetchTasks = async () => {
     try {
       const token = localStorage.getItem("token");
-      const response = await axios.get("http://studysync-q7ex.onrender.com/api/tasks", {
+      const response = await axios.get("https://studysync-q7ex.onrender.com/api/tasks", {
         headers: { Authorization: `Bearer ${token}` },
       });
       setTasks(response.data);
@@ -155,7 +155,7 @@ const fetchStreak = async () => {
     const response =
       await axios.get(
 
-        "http://studysync-q7ex.onrender.com/api/pomodoro",
+        "https://studysync-q7ex.onrender.com/api/pomodoro",
 
         {
           headers:{
@@ -244,7 +244,7 @@ if (completionRate === 100 && tasks.length > 0)
     const response =
       await axios.put(
 
-        "http://studysync-q7ex.onrender.com/api/auth/profile",
+        "https://studysync-q7ex.onrender.com/api/auth/profile",
 
         {
 

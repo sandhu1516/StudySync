@@ -29,7 +29,7 @@ function Login() {
     try {
 
       const response = await axios.post(
-        "http://studysync-q7ex.onrender.com/api/auth/login",
+        "https://studysync-q7ex.onrender.com/api/auth/login",
         {
           email,
           password

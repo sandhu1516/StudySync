@@ -24,7 +24,7 @@ function Register() {
       const response =
         await axios.post(
 
-          "http://studysync-q7ex.onrender.com/api/auth/register",
+          "https://studysync-q7ex.onrender.com/api/auth/register",
 
           {
             name,

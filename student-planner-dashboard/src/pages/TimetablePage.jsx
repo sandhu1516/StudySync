@@ -40,7 +40,7 @@ function TimetablePage() {
       const response =
         await axios.get(
 
-          "http://studysync-q7ex.onrender.com/api/timetable",
+          "https://studysync-q7ex.onrender.com/api/timetable",
 
           {
             headers:{
@@ -78,7 +78,7 @@ const addSchedule = async () => {
 
       await axios.put(
 
-        `http://studysync-q7ex.onrender.com/api/timetable/${editId}`,
+        `https://studysync-q7ex.onrender.com/api/timetable/${editId}`,
 
         {
           subject,
@@ -102,7 +102,7 @@ const addSchedule = async () => {
 
       await axios.post(
 
-        "http://studysync-q7ex.onrender.com/api/timetable",
+        "https://studysync-q7ex.onrender.com/api/timetable",
 
         {
           subject,
@@ -141,7 +141,7 @@ const addSchedule = async () => {
 
     await axios.put(
 
-      `http://studysync-q7ex.onrender.com/api/timetable/${id}`,
+      `https://studysync-q7ex.onrender.com/api/timetable/${id}`,
 
       {
         completed:
@@ -178,7 +178,7 @@ const addSchedule = async () => {
 
     await axios.delete(
 
-      `http://studysync-q7ex.onrender.com/api/timetable/${id}`,
+      `https://studysync-q7ex.onrender.com/api/timetable/${id}`,
 
       {
         headers:{
