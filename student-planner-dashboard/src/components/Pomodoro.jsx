@@ -78,7 +78,7 @@ function Pomodoro() {
   Number(seconds);
 
 await axios.post(
-  "http://localhost:5000/api/pomodoro",
+  "https://studysync-q7ex.onrender.com/api/pomodoro",
   {
     duration: totalSeconds
   },
